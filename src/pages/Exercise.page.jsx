@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import ExerciseSection from '../components/Exercises/Exercise.component';
 import FilterCard from '../components/Home/Filter.component';
 import { ActionTypes } from '../Redux/actions/actionTypes';
-import loadingEx from '../assets/images/loadingExercise.gif';
+import DataLoader from '../components/ExtraComponents/DataLoader';
 
 function Exercise() {
 
@@ -67,9 +67,7 @@ function Exercise() {
           </div>
           {
             loadingExercise?
-            <div className="text-center">
-              <img src={loadingEx} alt="loading exercise" style={{width:'50%'}} />
-            </div>
+            <DataLoader/>
             :
             (data.exercises.length > 0? 
             data.exercises.map((exercise,index)=>{

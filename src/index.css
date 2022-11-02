@@ -85,7 +85,9 @@ p{
   margin: 0 auto;
   width: 80%;
 }
-
+.m-top{
+  margin-top: 52.58px;
+}
 @media(max-width:991px){
   .myContainer{
       width: 90%;
@@ -198,15 +200,23 @@ p{
   border-radius: 10px;
   color: var(--white);
   box-shadow: 0 3px 10px rgba(236, 29, 39, 0.35);
-  height: 45px;
-  padding: 10px;
+  padding: 13px 10px;
   cursor: pointer;
 }
 .primary-btn:hover,#donation-btn a:hover, #donation-btn-footer a:hover{
   background-color: #a8131b;
   box-shadow: 0 7px 10px rgba(236, 29, 39, 0.35);
 }
-
+.disable-btn{
+  background-color: #dadadd;
+  color: var(--grey);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(171, 156, 157, 0.35);
+  padding: 13px 10px;
+  cursor: pointer;
+}
 
 .group-input{
   margin-bottom: 25px;
@@ -461,9 +471,10 @@ input[type='text']#msg{
 }
 .buttons{
   position: sticky;
-  top: 0;
-  background-color: var(--white);
-  padding: 5px;
+  top: 50px;
+  background-color: #fefefe75;
+  backdrop-filter: blur(10px);
+  padding: 5px; 
   z-index: 5;
 }
 

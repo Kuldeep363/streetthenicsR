@@ -40,17 +40,7 @@
   transform: rotate(180deg);
 }
 
-.disable-btn{
-  background-color: #dadadd;
-  color: var(--grey);
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(171, 156, 157, 0.35);
-  height: 45px;
-  padding: 10px;
-  cursor: pointer;
-}
+
 
 .filter label{
   background-color: #C7C7CC;

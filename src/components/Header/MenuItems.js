@@ -4,11 +4,11 @@ export const MenuItems = [
         subItems:[
             {
                 title:'Weight Loss',
-                url:'/'
+                url:'/weight-loss/tips'
             },
             {
                 title:'Muscle Gain',
-                url:'/'
+                url:'/muscle-gain/tips'
             },
             {
                 title:'Strength Eercises',
