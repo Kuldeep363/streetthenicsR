@@ -1,0 +1,27 @@
+#footer{
+    background-color: var(--white);
+    box-shadow: 0 -5px 25px rgba(171, 156, 157, 0.25);
+    z-index: 1;
+  }
+  
+  .footer-heading{
+    font-weight: 700;
+    color: var(--blue);
+  }
+  
+#footer .description{
+    color: var(--grey );
+    font-size: 12px;
+}
+@media(max-width:925px){
+    #footer .description{
+        font-size: 10px;
+    }
+
+
+}
+  
+  .heart{
+    animation: heart-beat infinite 1s alternate ease-in-out;
+  }
+  

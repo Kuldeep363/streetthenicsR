@@ -1,0 +1,52 @@
+#body-view{
+    width: 80vw;
+  }
+  
+  #body-view svg{
+    height: 600px;
+  }
+  
+  #female-body img{
+    width: 50%;
+  }
+
+  #male-body,#female-body{
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+  
+  
+  #instruction{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(15, 100, 145, 0.05);
+    border-radius: 10px;
+  }
+  
+  .body-part path{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .body-part:hover path{
+    fill: var(--red);
+  }
+  
+  #view-toggler{
+    cursor: pointer;
+    display: none;
+  }
+
+  @media(max-width:768px){
+    #body-view .back-view{
+        display: none;
+    }
+    #view-toggler{
+        display: block;
+    }
+    #body-view svg{
+        height: 450px;
+    }
+    #female-body img{
+        width: 85vw;
+    }
+}

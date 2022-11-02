@@ -1,0 +1,130 @@
+.nav-btn button{
+width: 125px;
+}
+.hover-list{
+padding: 10px;
+position: absolute;
+/* top: 35px; */
+left: 0;
+width: 14vw;
+background-color: var(--white);
+border-radius: 10px;
+box-shadow: 0 0 25px rgba(171, 156, 157, 0.35);
+transition: 0.3s ease-in-out all;
+display: none;
+z-index: 10;
+}
+.hover-list a{
+display: block;
+padding: 5px;
+margin: 0px;
+font-size: 14px;
+transition: 0.3s ease-in-out all;
+}
+.hover-list a:hover{
+background-color: rgba(15, 100, 145, 0.05);
+border-radius: 5px;
+/* font-weight: 600; */
+color: var(--blue);
+}
+.nav-content>div:hover .hover-list{
+display: block;
+}
+.nav-content>div:hover svg{
+transform: rotate(-180deg);
+}
+.mob-menu-parent .mob-menu-parent-links a{ 
+    color: var(--white);
+    opacity: 0.8;
+}
+.mob-menu-parent .mob-menu-parent-links:hover{
+background-color: rgba(255, 255, 255, 0.05);
+border-radius: 5px;
+}
+.mob-menu-parent .mob-menu-parent-links:hover a{
+color: var(--white);
+opacity: 1;
+}
+
+#mobile-navbar, #mob-navbar-links{
+z-index: 16000000;
+display: none!important;
+}
+#mob-navbar-links{
+position: fixed;
+top: 0;
+left: 0;
+max-width: 100vw;
+width: 100vw;
+height: 0;
+background-color: var(--blue);
+z-index: 15;
+color: var(--white);
+overflow: hidden;
+transition: 0.5s all ease-in-out;
+}
+.mob-menu-parent{
+transform: translateX(-50px);
+border-bottom: 1px solid #ffffffdc;
+transition: 0.7s all ease-in-out;
+}
+.mob-menu-parent:last-child{
+border-bottom: none;
+}
+#mob-navbar-links.active{
+height: 100vh;
+}
+#mob-navbar-links.active .mob-menu-parent{
+transform: translateX(0);
+}
+#navbars{
+position: fixed;
+top: 0;
+width: 100vw;
+max-width: 100vw;
+background-color: #fefefe75;
+backdrop-filter: blur(10px);
+z-index: 16000;
+}
+.menu-heading{
+    font-weight: 700;
+    /* color: var(--white); */
+  }
+@media (max-width:992px){
+#links{
+    display:none!important;
+}
+#mobile-navbar, #mob-navbar-links{
+    display: block!important;
+}
+}
+
+.hamburger-menu {
+    cursor: pointer;
+  }
+  
+  .menu-bar1,
+  .menu-bar3 {
+    width: 15px;
+    height: 1px;
+    background-color: var(--blue);
+    margin: 9px 0;
+    transition: 0.4s;
+    transform-origin: right;
+  }
+  
+  
+  /* ROTATE FIRST BAR */
+  .active .menu-bar1 {
+    transform: rotate(-45deg);
+    background-color: var(--white);
+    
+  }
+  
+  
+  /* ROTATE LAST BAR */
+  .active .menu-bar3 {
+    transform: rotate(45deg);
+    background-color: var(--white);
+  }
+  
