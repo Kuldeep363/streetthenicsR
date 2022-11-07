@@ -4,6 +4,7 @@ import { useOutletContext } from 'react-router-dom';
 function WeightLossExercise() {
     let [activeBtn] = useOutletContext();
     activeBtn('exercises');
+    document.title = 'Weight Loss Exercises -Street Thenics| Best Weight Loss Exercises'
   return (
     <div id="exercise" className=" weight-loss-page mt-5">
 

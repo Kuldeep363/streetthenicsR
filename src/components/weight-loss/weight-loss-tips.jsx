@@ -4,6 +4,7 @@ import { useOutletContext } from 'react-router-dom';
 function WeightLossTips() {
     let [activeBtn] = useOutletContext();
     activeBtn('tips');
+    document.title = 'Weight loss Tips -Street Thenics| Best weight loss routine | weight loss in 30 days'
   return (
     <div id="tips" className=" weight-loss-page mt-5">
         <h1 className="heading-1" style={{fontWeight: '600',fontSize: '24px'}}>Hey you want to lose weight!</h1>

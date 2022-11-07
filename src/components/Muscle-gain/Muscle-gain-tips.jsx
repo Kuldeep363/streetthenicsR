@@ -4,6 +4,7 @@ import { Link, useOutletContext } from 'react-router-dom';
 function MuscleGainTips() {
     let [activeBtn] = useOutletContext();
     activeBtn('tips');
+    document.title = 'Muscle Gain Tips -Street Thenics| Best Muscle Gain routine and Tips | Fast Growth Of Muscle'
   return (
     <div id="tips" class="muscle-gain-page mt-5">
 

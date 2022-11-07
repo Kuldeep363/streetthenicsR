@@ -55,8 +55,8 @@ function FilterCard({redirection,Hide}) {
                     <label htmlFor="gym" onClick={()=>setExerciseType('gym')}>Gym</label>
                     <input type="radio" name="e-type" id="bw" value="bodyweight" onChange={(e)=>handleChange()} checked={exType==='bodyweight'?true:false} />
                     <label htmlFor="bw" onClick={()=>setExerciseType('bodyweight')}>Bodyweight</label>
-                    <input type="radio" name="e-type" id="rb" value="resistant-band" onChange={(e)=>handleChange()} checked={exType==='resistant-band'?true:false} />
-                    <label htmlFor="rb" onClick={()=>setExerciseType('resistant-band')}>Resistant Band</label>
+                    <input type="radio" name="e-type" id="rb" value="resistance-band" onChange={(e)=>handleChange()} checked={exType==='resistance-band'?true:false} />
+                    <label htmlFor="rb" onClick={()=>setExerciseType('resistance-band')}>Resistance Band</label>
                 </div>
             </div>
         </div>
