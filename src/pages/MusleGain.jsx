@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import muscleGainTips from '../assets/images/mg-tips.png';
+import muscleGainDiet from '../assets/images/m-g-diet.png';
+import muscleGainExercises from '../assets/images/m-g-exercises.png';
 
 function MuscleGain() {
     let [btn, setBtn] = useState('tips');
@@ -11,13 +14,13 @@ function MuscleGain() {
       <div className="banner">
         {
             btn === 'tips'?
-            <img src="https://drive.google.com/uc?id=1hyJg6ILBt_0T2L-f06i4-GnrRQ6JJ_YN" alt="muscle gain tips- street thenics"/>
+            <img src={muscleGainTips} alt="muscle gain tips- street thenics"/>
             :
             (
                 btn === 'diet'?
-                <img src="https://drive.google.com/uc?id=1vDaVHdMwtnKNW9X7pf6UX3zMf-WaQ4rJ" alt="muscle gain diet- street thenics"/>
+                <img src={muscleGainDiet} alt="muscle gain diet- street thenics"/>
                 :
-                <img src="https://drive.google.com/uc?id=11hTNdwVkPJYYyJJKY8SFscg87zJmoUNZ" alt="muscle gain exercise-- street thenics"/>
+                <img src={muscleGainExercises} alt="muscle gain exercise-- street thenics"/>
             )
         }
         

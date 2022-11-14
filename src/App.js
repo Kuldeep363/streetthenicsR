@@ -13,6 +13,8 @@ import MuscleGain from './pages/MusleGain';
 import MuscleGainTips from './components/Muscle-gain/Muscle-gain-tips';
 import MuscleGainDiet from './components/Muscle-gain/Muscle-gain-diet';
 import MuscleGainExercise from './components/Muscle-gain/Muscle-gain-exercise';
+import StrengthExercises from './pages/StrengthExercises';
+import ContactPage from './pages/Contact.page';
 
 // import 
 
@@ -34,6 +36,8 @@ function App() {
         <Route path='diet' element={<MuscleGainDiet/>} />
         <Route path='exercises' element={<MuscleGainExercise/>} />
       </Route>
+      <Route path='/strength-exercises' element={<StrengthExercises/>} />
+      <Route path='/contact' element={<ContactPage/>} />
     </Routes>
     <Footer/>
 

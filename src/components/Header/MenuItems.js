@@ -12,7 +12,7 @@ export const MenuItems = [
             },
             {
                 title:'Strength Eercises',
-                url:'/'
+                url:'/strength-exercises'
             },
         ]
     },
@@ -55,7 +55,7 @@ export const MenuItems = [
             },
             {
                 title:'Contact us',
-                url:'/'
+                url:'/contact'
             }
         ]
     }

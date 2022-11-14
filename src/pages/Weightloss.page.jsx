@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import weightLossTips from '../assets/images/weight-loss.png';
+import weightLossDiet from '../assets/images/w-l-diet.png';
+import weightLossExercises from '../assets/images/w-l-exercise.png';
 
 function Weightloss() {
     let [btn, setBtn] = useState('tips');
@@ -11,13 +14,13 @@ function Weightloss() {
       <div className="banner">
         {
             btn === 'tips'?
-            <img src="https://drive.google.com/uc?id=1cd6p5uI8jeXQuEWs8kOITjpP55-zkplA" alt="weight loss - street thenics" />
+            <img src={weightLossTips} alt="weight loss - street thenics" />
             :
             (
                 btn === 'diet'?
-                <img src="https://drive.google.com/uc?id=1QpQgAmisQVTZW4DpJjTcvvqXsD-lFdjl" alt="weight loss diets - street thenics" />
+                <img src={weightLossDiet} alt="weight loss diets - street thenics" />
                 :
-                <img src="https://drive.google.com/uc?id=1TRrYr_pq5Q7_aQEzUICVXjlyb-QZPqEE" alt="weight loss exercises - street thenics" />
+                <img src={weightLossExercises} alt="weight loss exercises - street thenics" />
             )
         }
         

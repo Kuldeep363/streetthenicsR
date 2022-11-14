@@ -160,6 +160,16 @@ p{
    box-sizing: content-box; 
 }
 
+.videoTut{
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--blue);
+  display:table;
+  cursor: pointer;
+
+}
 
 #loader-wrapper{
   width: 100vw;
@@ -194,18 +204,21 @@ p{
   transition: 0.3s all ease-in-out;
 }
 .primary-btn, #donation-btn a, #donation-btn-footer a{
-  background-color: var(--red);
+  background-color: var(--blue);
   border: none;
   outline: none;
   border-radius: 10px;
   color: var(--white);
-  box-shadow: 0 3px 10px rgba(236, 29, 39, 0.35);
+  box-shadow: 0 7px 10px #073d5a3a;
   padding: 13px 10px;
   cursor: pointer;
 }
 .primary-btn:hover,#donation-btn a:hover, #donation-btn-footer a:hover{
-  background-color: #a8131b;
-  box-shadow: 0 7px 10px rgba(236, 29, 39, 0.35);
+  background-color: #074a6e;
+  box-shadow: 0 7px 10px #073d5a3a;
+}
+button:focus{
+  outline:none;
 }
 .disable-btn{
   background-color: #dadadd;
@@ -219,7 +232,7 @@ p{
 }
 
 .group-input{
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .group-input label{
   font-size: 16px;
@@ -241,7 +254,7 @@ p{
   transform: translateY(-50%);
 }
 
-input{
+input.form-control{
   width: 100%;
   min-width: 200px;
   max-width: 750px;
@@ -250,14 +263,19 @@ input{
   height: 55px;
   border-radius: 10px;
   outline: none;
+  border: none;
   background-color: var(--white);
   color: var(--blue);
   box-shadow: 0 0 20px rgba(171, 156, 157, 0.35);
 }
 
-input:focus{
+input.form-control:focus{
   border-radius: 0px;
   border-bottom: 2px solid var(--blue);
+  background-color: #fff;
+  border-color: none;
+  outline: 0;
+  box-shadow: 0 0 20px rgba(171, 156, 157, 0.35) !important;
 }
 input[type='text']#msg{
   height: 125px;
@@ -271,7 +289,10 @@ input[type='text']#msg{
   max-width: 750px;
   min-width: 200px;
 }
-
+#contact{
+  max-height: 700px;
+  min-height: 600px;
+}
 
 @keyframes ldio-sw5pdd4i1dj {
   0% { opacity: 1 }
@@ -497,6 +518,18 @@ input[type='text']#msg{
   width: 100%;
   background:url("./assets/images/image-loader.gif") center center no-repeat;
   background-color: var(--white);
+}
+
+#alertPrompt{
+  transition: all 0.7s ease-in-out;
+  opacity: 0;
+  position: fixed;
+  top: -60px;
+  z-index: 1000000;
+}
+#alertPrompt.show{
+  opacity: 1;
+  top:10px;
 }
 
 

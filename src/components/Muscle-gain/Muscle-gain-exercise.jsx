@@ -1,10 +1,13 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 
 function MuscleGainExercise() {
     let [activeBtn] = useOutletContext();
     activeBtn('exercises');
-    document.title = 'Muscle Gain Exercises -Street Thenics| Best Muscle Gain Exercises | Fast Growth Of Muscle'
+    useEffect(()=>{
+        document.title = 'Muscle Gain Exercises -Street Thenics| Best Muscle Gain Exercises | Fast Growth Of Muscle'
+    })
   return (
     <div id="exercise" className="muscle-gain-page mt-5">
         <h1 className="heading-1 " style={{fontWeight: '600',fontSize: '24px'}}>Workout plan for beginners</h1>
