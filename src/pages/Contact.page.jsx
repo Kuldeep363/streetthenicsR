@@ -71,7 +71,7 @@ function ContactPage() {
       setBtnText('Sending...') //setting btn to sending
       event.target.style.pointerEvents = 'none'; // restriting user to do anything with form untill response fro API
       // sending api request to EmailJS
-      emailjs.sendForm(process.env.REACT_APP_SERVICE_I, process.env.REACT_APP_TEMPLATE_ID, event.target,process.env.REACT_APP_PUBLIC_KEY)
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, event.target,process.env.REACT_APP_PUBLIC_KEY)
       .then(()=>{
         // if the request resolves(fulfilled)
         setSuccess(true); 

@@ -15,6 +15,7 @@ import MuscleGainDiet from './components/Muscle-gain/Muscle-gain-diet';
 import MuscleGainExercise from './components/Muscle-gain/Muscle-gain-exercise';
 import StrengthExercises from './pages/StrengthExercises';
 import ContactPage from './pages/Contact.page';
+import About from './pages/About.page';
 
 // import 
 
@@ -38,6 +39,7 @@ function App() {
       </Route>
       <Route path='/strength-exercises' element={<StrengthExercises/>} />
       <Route path='/contact' element={<ContactPage/>} />
+      <Route path='/about-us' element={<About/>} />
     </Routes>
     <Footer/>
 

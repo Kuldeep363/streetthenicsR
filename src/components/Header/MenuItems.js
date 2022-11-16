@@ -51,7 +51,7 @@ export const MenuItems = [
         subItems:[
             {
                 title:'About us',
-                url:'/'
+                url:'/about-us'
             },
             {
                 title:'Contact us',
