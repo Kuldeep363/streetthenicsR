@@ -16,6 +16,10 @@ import MuscleGainExercise from './components/Muscle-gain/Muscle-gain-exercise';
 import StrengthExercises from './pages/StrengthExercises';
 import ContactPage from './pages/Contact.page';
 import About from './pages/About.page';
+import Calisthenics from './pages/Calisthenics.page';
+import CalisthenicsBeginner from './components/Calisthenics/CalisthenicsBeginner';
+import CalisthenicsIntermediate from './components/Calisthenics/CalisthenicsIntermediate';
+import CalisthenicsAdvance from './components/Calisthenics/CalisthenicsAdvance';
 
 // import 
 
@@ -36,6 +40,11 @@ function App() {
         <Route path='tips' element={<MuscleGainTips/>} />
         <Route path='diet' element={<MuscleGainDiet/>} />
         <Route path='exercises' element={<MuscleGainExercise/>} />
+      </Route>
+      <Route path='/calisthenics' element={<Calisthenics/>}>
+        <Route path='beginner' element={<CalisthenicsBeginner/>} />
+        <Route path='intermediate' element={<CalisthenicsIntermediate/>} />
+        <Route path='advance' element={<CalisthenicsAdvance/>} />
       </Route>
       <Route path='/strength-exercises' element={<StrengthExercises/>} />
       <Route path='/contact' element={<ContactPage/>} />

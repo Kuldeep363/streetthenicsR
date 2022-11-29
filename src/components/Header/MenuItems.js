@@ -21,15 +21,15 @@ export const MenuItems = [
         subItems:[
             {
                 title:'Beginner',
-                url:'/'
+                url:'/calisthenics/beginner'
             },
             {
                 title:'Intermediate',
-                url:'/'
+                url:'/calisthenics/intermediate'
             },
             {
                 title:'Advance',
-                url:'/'
+                url:'/calisthenics/advance'
             },
         ]
     },

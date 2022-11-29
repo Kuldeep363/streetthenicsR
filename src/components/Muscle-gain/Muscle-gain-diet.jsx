@@ -1,10 +1,13 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 
 function MuscleGainDiet() {
   let [activeBtn] = useOutletContext();
   activeBtn('diet');
-  document.title = 'Muscle Gain Diet -Street Thenics| Best Muscle Gain Diet | Fast Growth Of Muscle'
+  useEffect(()=>{
+      document.title = 'Muscle Gain Diet -Street Thenics| Best Muscle Gain Diet | Fast Growth Of Muscle';
+  },[])
   return (
     <div id="diet" className="muscle-gain-page mt-5">
 
