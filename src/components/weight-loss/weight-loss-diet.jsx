@@ -1,10 +1,13 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 
 function WeightLossDiet() {
     let [activeBtn] = useOutletContext();
-    activeBtn('diet');
-    document.title = 'Weight Loss Diet -Street Thenics| Best Weight Loss Diet | Best Weight Loss Indian Food( Diet )  | Best Weight Loss Food | Best Weight Loss healthy Food';
+    useEffect(()=>{
+        activeBtn('diet');
+        document.title = 'Weight Loss Diet -Street Thenics| Best Weight Loss Diet | Best Weight Loss Indian Food( Diet )  | Best Weight Loss Food | Best Weight Loss healthy Food';
+    },[])
     return (
     <div id="diet" className=" weight-loss-page mt-5">
 

@@ -8,9 +8,6 @@ function Calisthenics() {
     }
   return (
     <div className="myContainer weight-loss m-top">
-      {/* <div className="banner">
-        <img src={muscleGainTips} alt="muscle gain tips- street thenics"/>
-    </div> */}
 
         <div className="buttons mt-3 d-flex justify-content-center">
             <div className="d-flex m-0">

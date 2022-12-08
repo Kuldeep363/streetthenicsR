@@ -4,8 +4,8 @@ import { Link, useOutletContext } from 'react-router-dom';
 
 function MuscleGainExercise() {
     let [activeBtn] = useOutletContext();
-    activeBtn('exercises');
     useEffect(()=>{
+        activeBtn('exercises');
         document.title = 'Muscle Gain Exercises -Street Thenics| Best Muscle Gain Exercises | Fast Growth Of Muscle'
     })
   return (

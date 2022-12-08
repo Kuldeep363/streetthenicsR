@@ -6,7 +6,7 @@ import imgFallback from '../../assets/images/fallback-img.png';
 
 function ExerciseSection({exData}) {
   const gender = useSelector(selectGender);
-  const {name, sets, summary, img1M, img2M, img1F, img2F, instructions} = exData;
+  const {name, sets, summary, imgM1, imgM2, imgF1, imgF2, instructions} = exData;
 
 
 
@@ -35,17 +35,17 @@ function ExerciseSection({exData}) {
     <div className="m-0 mt-3 mb-2 row justify-content-center">
       { gender === "male"?
         <><div className="ex-img col-6">
-          <img src={img1M} alt={name} onError={(e)=>setFallbackImg(e)} />
+          <img src={imgM1} alt={name} onError={(e)=>setFallbackImg(e)} />
         </div>
         <div className="ex-img col-6">
-          <img src={img2M} alt={name} onError={(e)=>setFallbackImg(e)}  />
+          <img src={imgM2} alt={name} onError={(e)=>setFallbackImg(e)}  />
         </div></>
        :
         <><div className="ex-img col-6">
-          <img src={img1F} alt={name} onError={(e)=>setFallbackImg(e)}  />
+          <img src={imgF1} alt={name} onError={(e)=>setFallbackImg(e)}  />
         </div>
         <div className="ex-img col-6">
-          <img src={img2F} alt={name} onError={(e)=>setFallbackImg(e)}  />
+          <img src={imgF2} alt={name} onError={(e)=>setFallbackImg(e)}  />
         </div></>
 
       }

@@ -4,8 +4,8 @@ import { useOutletContext } from 'react-router-dom';
 
 function MuscleGainDiet() {
   let [activeBtn] = useOutletContext();
-  activeBtn('diet');
   useEffect(()=>{
+      activeBtn('diet');
       document.title = 'Muscle Gain Diet -Street Thenics| Best Muscle Gain Diet | Fast Growth Of Muscle';
   },[])
   return (

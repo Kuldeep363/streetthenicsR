@@ -9,7 +9,7 @@ function VideoPlayer({show,url, setVideo}) {
         outsideArea.addEventListener('click',(e)=>{
             if(e.target.id === 'videoPlayer'){
                 setVideo(!show)
-                console.log('clicked')
+                // console.log('clicked')
             }
         }, );
 
@@ -22,9 +22,20 @@ function VideoPlayer({show,url, setVideo}) {
     },[show])
   return (
     <div id='videoPlayer'>
-        <iframe  src={`https://www.youtube.com/embed/${url}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen='1'></iframe>
+        <iframe  src={`https://www.youtube.com/embed/${url}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen='1'></iframe>
     </div>
   )
 }
 
 export default VideoPlayer
+
+// How to use
+
+// In main component where you are using this component
+// let [video, setVideo] = useState(false);
+// let [url, setUrl] = useState("");
+// function showVideo(vURL) {
+//     setVideo((video) => !video);
+//     setUrl(vURL);
+//   }
+// <VideoPlayer show={video} setVideo={setVideo} url={url} setUrl={setUrl} />

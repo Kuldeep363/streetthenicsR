@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { MenuItems } from './MenuItems';
 import './Header.css'
+import Logo from '../../assets/images/street-thenics-logo.svg';
 
 function Header(props) {
     const [ mobNavActive, setMobActive] = useState(false)
@@ -18,7 +19,8 @@ function Header(props) {
           <div className="d-flex justify-content-between">
             <div id="logo" className="mt-auto mb-auto">
               <Link to="/"> 
-                <img src='https://drive.google.com/uc?id=1cHQTEAY9ZAu8IhRxl7_nzSRo1nRfG1H_' alt="street thenics" style={{width:'40px'}} />
+                <img src={Logo} alt="street thenics" style={{width:'40px'}} />
+                {/* <img src='https://drive.google.com/uc?id=1cHQTEAY9ZAu8IhRxl7_nzSRo1nRfG1H_' alt="street thenics" style={{width:'40px'}} /> */}
               </Link>
             </div>
             <div id="links" className='h-100 mt-auto mb-auto'>

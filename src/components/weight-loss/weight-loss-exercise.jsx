@@ -12,8 +12,8 @@ function WeightLossExercise() {
     setVideo((video) => !video);
     setUrl(vURL);
   }
-  activeBtn("exercises");
   useEffect(() => {
+    activeBtn("exercises");
     document.title =
       "Weight Loss Exercises -Street Thenics| Best Weight Loss Exercises";
   });

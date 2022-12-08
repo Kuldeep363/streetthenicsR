@@ -1,15 +1,18 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 
 function MuscleGainTips() {
     let [activeBtn] = useOutletContext();
-    activeBtn('tips');
-    document.title = 'Muscle Gain Tips -Street Thenics| Best Muscle Gain routine and Tips | Fast Growth Of Muscle'
+    useEffect(()=>{
+        activeBtn('tips');
+        document.title = 'Muscle Gain Tips -Street Thenics| Best Muscle Gain routine and Tips | Fast Growth Of Muscle'
+    },[])
   return (
-    <div id="tips" class="muscle-gain-page mt-5">
+    <div id="tips" className="muscle-gain-page mt-5">
 
-        <h1 class="heading-1" style={{fontWeight: '600',fontSize: '24px'}}>Hey you want to gain muscle!</h1>
-        <h2 class="mt-3">
+        <h1 className="heading-1" style={{fontWeight: '600',fontSize: '24px'}}>Hey you want to gain muscle!</h1>
+        <h2 className="mt-3">
             When it comes to physique improvements, muscle building is often a top priority. <br/><br/>
             Added muscle mass will increase the definition of your muscles, improve your lean body mass, and add bulk and size to your frame in all the right places. <br/><br/>
             <strong>
@@ -20,8 +23,8 @@ function MuscleGainTips() {
         </h2>
 
 
-        <h1 class="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>What is muscle building?</h1>
-        <h2 class="mt-3">
+        <h1 className="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>What is muscle building?</h1>
+        <h2 className="mt-3">
             Anatomically, skeletal muscles are a series of parallel cylindrical fibers that contract to produce force. This muscle contraction allows all external human movement to occur. <br/><br/>
             If your body removes more protein than it adds, you’ll lose muscle mass. If the net protein synthesis is even, no measurable change in muscle size occurs. Finally, if your body deposits more protein than it removes, your muscles will grow. <br/><br/>
             <strong>
@@ -33,8 +36,8 @@ function MuscleGainTips() {
         </h2>
 
 
-        <h1 class="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>Some hacks of muscle building!</h1>
-        <h2 class="mt-3">
+        <h1 className="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>Some hacks of muscle building!</h1>
+        <h2 className="mt-3">
             While many types of exercise offer health benefits, the only way to reliably drive muscle growth is by using your muscles against moderate to heavy resistance. In addition, muscle growth is specific to the muscles being used. <br/><br/>
             <p style={{color: 'var(--red)',fontSize: "20px"}}>Decide your target number of repetitions</p>
             The repetition continuum is a useful concept when designing training programs for muscle building. <br/><br/>
@@ -63,8 +66,8 @@ function MuscleGainTips() {
         </h2>
 
 
-        <h1 class="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>Eat to gain muscle!</h1>
-        <h2 class="mt-3">
+        <h1 className="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>Eat to gain muscle!</h1>
+        <h2 className="mt-3">
             Your diet is the second half of the muscle building equation. All the weight training in the world will not yield results if you don’t supply your body the nutrients it needs to grow new muscle tissue. <br/><br/>
             <p style={{color: 'var(--red)',fontSize: "20px"}}>Bulking v/s cutting</p>
             Most athletes, bodybuilders, and serious muscle growing enthusiasts follow some variation of a bulking and cutting cycle. <br/><br/>
@@ -100,8 +103,8 @@ function MuscleGainTips() {
 
         </h2>
 
-        <h1 class="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>How fast can you gain muscle?</h1>
-        <h2 class="mt-3">
+        <h1 className="heading-1 mt-3" style={{fontWeight: '600',fontSize: '24px'}}>How fast can you gain muscle?</h1>
+        <h2 className="mt-3">
             While gaining muscle is surprisingly simple compared with many other life goals, that doesn’t mean it’s easy — and it certainly doesn’t happen quickly. <br/><br/>
             Gaining serious muscle takes many months and years of weight training and proper eating. Muscle gain rates vary by individual, even when following the same program. <br/><br/>
             Overall, with good nutrition and consistent training, research has found that 0.5–2 pounds (0.25–0.9 kg) of muscle growth per month is a good benchmark for maximal potential muscle growth. <br/><br/>
