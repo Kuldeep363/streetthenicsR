@@ -4,7 +4,7 @@ import Header from './components/Header/Header.component';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer.component';
 import DataLoader from './components/ExtraComponents/DataLoader';
-const Home = lazy(()=> import('./pages/Home.page'));
+import Home from './pages/Home.page';
 const Exercise = lazy(()=> import('./pages/Exercise.page'));
 const Weightloss = lazy(()=> import('./pages/Weightloss.page'));
 const WeightLossTips = lazy(()=> import('./components/weight-loss/weight-loss-tips'));
