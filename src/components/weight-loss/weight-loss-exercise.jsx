@@ -2,6 +2,16 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+const placeholderComp = ()=>{
+  return(
+    <div style={{width:'100px',height:'100px',backgroundColor:'#000'}}>
+
+    </div>
+  )
+}
 
 function WeightLossExercise() {
   let [activeBtn] = useOutletContext();
@@ -42,7 +52,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Running</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1R2PuBMHF7TNz2VpR52nCH7dsqi5h4uO6"
         alt="running exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -77,7 +87,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Skipping/ Jump rope</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1p0W4NtB6nFT3FTQq4glEPpo_SS3spXWO"
         alt="skipping exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -107,7 +117,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Swimming</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1mB_xgvMagdSOWUob8LRaz-C0YPOk20M7"
         alt="swimming for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -129,7 +139,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Forward Lunge</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1wg2ZMnHI6-5_Y7_cjyLaV5Lq5J_3cvMc"
         alt="lunges exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -158,7 +168,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Burpee</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1Ed4YhVOFDLhaiOsascRS8TT6VzbwN5vU"
         alt="burpee exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -189,7 +199,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Explosive Lunge</h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=15fe1szYMXGWCONzCeAR9_WgePnH7HjTW"
         alt="explosive lunges exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -215,7 +225,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Squat </h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=18UbV-Oma8HAfQDBbdRuKVRtUAN7xP6L9"
         alt="squats exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -241,7 +251,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Mountain Climbers </h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1VL_E26OrTppffBVjN8mWdGxFUSowZEWS"
         alt="mountain climbers exercise for weight loss - street thenics"
         style={{ width: "100%" }}
@@ -266,7 +276,7 @@ function WeightLossExercise() {
       </h2>
 
       <h1 className="heading-1 mt-5">Tabata Drill </h1>
-      <img
+      <LazyLoadImage effect='blur'
         src="https://drive.google.com/uc?id=1um2g_sOSacFAMXcrlMHcpGExGyqYmQW5"
         alt="Tabata Drill exercise for weight loss - street thenics"
         style={{ width: "100%" }}

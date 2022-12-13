@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import weightLossTips from '../assets/images/weight-loss.png';
 import weightLossDiet from '../assets/images/w-l-diet.png';
 import weightLossExercises from '../assets/images/w-l-exercise.png';
+import SkeletonLoading from '../components/ExtraComponents/SkeletonLoading';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Weightloss() {
     let [btn, setBtn] = useState('tips');
@@ -14,13 +18,13 @@ function Weightloss() {
       <div className="banner">
         {
             btn === 'tips'?
-            <img src={weightLossTips} alt="weight loss - street thenics" />
+            <LazyLoadImage effect='blur' src={weightLossTips} alt="weight loss - street thenics" />
             :
             (
                 btn === 'diet'?
-                <img src={weightLossDiet} alt="weight loss diets - street thenics" />
+                <LazyLoadImage effect='blur' src={weightLossDiet} alt="weight loss diets - street thenics" />
                 :
-                <img src={weightLossExercises} alt="weight loss exercises - street thenics" />
+                <LazyLoadImage effect='blur' src={weightLossExercises} alt="weight loss exercises - street thenics" />
             )
         }
         
@@ -51,7 +55,9 @@ function Weightloss() {
             </div>
         </div>
     </div>
-    <Outlet context={[activeBtn]} />
+    <Suspense fallback={<SkeletonLoading/>}>
+        <Outlet context={[activeBtn]} />
+    </Suspense>
     </div>
   )
 }

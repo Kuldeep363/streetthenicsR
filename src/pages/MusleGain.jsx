@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import muscleGainTips from '../assets/images/mg-tips.png';
 import muscleGainDiet from '../assets/images/m-g-diet.png';
 import muscleGainExercises from '../assets/images/m-g-exercises.png';
+import SkeletonLoading from '../components/ExtraComponents/SkeletonLoading';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function MuscleGain() {
     let [btn, setBtn] = useState('tips');
@@ -14,13 +17,13 @@ function MuscleGain() {
       <div className="banner">
         {
             btn === 'tips'?
-            <img src={muscleGainTips} alt="muscle gain tips- street thenics"/>
+            <LazyLoadImage effect='blur' src={muscleGainTips} alt="muscle gain tips- street thenics"/>
             :
             (
                 btn === 'diet'?
-                <img src={muscleGainDiet} alt="muscle gain diet- street thenics"/>
+                <LazyLoadImage effect='blur' src={muscleGainDiet} alt="muscle gain diet- street thenics"/>
                 :
-                <img src={muscleGainExercises} alt="muscle gain exercise-- street thenics"/>
+                <LazyLoadImage effect='blur' src={muscleGainExercises} alt="muscle gain exercise-- street thenics"/>
             )
         }
         
@@ -51,7 +54,9 @@ function MuscleGain() {
             </div>
         </div>
     </div>
-    <Outlet context={[activeBtn]} />
+    <Suspense fallback={<SkeletonLoading/>}>
+      <Outlet context={[activeBtn]} />
+    </Suspense>
     </div>
   )
 }
