@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { selectGender } from '../../Redux/reducers/reducers';
 
 import imgFallback from '../../assets/images/fallback-img.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function ExerciseSection({exData}) {
   const gender = useSelector(selectGender);
@@ -28,24 +30,20 @@ function ExerciseSection({exData}) {
     <h2 className="mt-3 mb-2">
       {summary}
     </h2>
-     {/* <div className="video mt-3 mb-2" style="position: relative;">
-      <iframe  src={{exercise.video_link}} title="Street Thenics Exercises" frameborder="0" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div className="video-loader"></div>
-    </div>  */}
     <div className="m-0 mt-3 mb-2 row justify-content-center">
       { gender === "male"?
         <><div className="ex-img col-6">
-          <img src={imgM1} alt={name} onError={(e)=>setFallbackImg(e)} loading='lazy' />
+          <LazyLoadImage src={imgM1} alt={name} placeholderSrc={imgFallback} effect='blur' onError={(e)=>setFallbackImg(e)}/>
         </div>
         <div className="ex-img col-6">
-          <img src={imgM2} alt={name} onError={(e)=>setFallbackImg(e)} loading='lazy'  />
+          <LazyLoadImage src={imgM2} alt={name} placeholderSrc={imgFallback} effect='blur' onError={(e)=>setFallbackImg(e)}/>
         </div></>
        :
         <><div className="ex-img col-6">
-          <img src={imgF1} alt={name} onError={(e)=>setFallbackImg(e)} loading='lazy'  />
+          <LazyLoadImage src={imgF1} alt={name} placeholderSrc={imgFallback} effect='blur' onError={(e)=>setFallbackImg(e)}/>
         </div>
         <div className="ex-img col-6">
-          <img src={imgF2} alt={name} onError={(e)=>setFallbackImg(e)} loading='lazy'  />
+          <LazyLoadImage src={imgF2} alt={name} placeholderSrc={imgFallback} effect='blur' onError={(e)=>setFallbackImg(e)}/>
         </div></>
 
       }
