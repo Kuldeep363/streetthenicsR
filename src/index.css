@@ -254,7 +254,7 @@ button:focus{
   transform: translateY(-50%);
 }
 
-input.form-control{
+input.form-control, .custom-select-sm{
   width: 100%;
   min-width: 200px;
   max-width: 750px;
@@ -269,7 +269,7 @@ input.form-control{
   box-shadow: 0 0 20px rgba(171, 156, 157, 0.35);
 }
 
-input.form-control:focus{
+input.form-control:focus, .custom-select-sm:focus{
   border-radius: 0px;
   border-bottom: 2px solid var(--blue);
   background-color: #fff;

@@ -37,8 +37,8 @@ export const MenuItems = [
         title:'Nutritions',
         subItems:[
             {
-                title:'Calories Calculator',
-                url:'/'
+                title:'Fitness Calculator',
+                url:'/fitness-calculators'
             },
             {
                 title:'Macro Nutrients',

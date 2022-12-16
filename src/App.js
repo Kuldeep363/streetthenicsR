@@ -22,6 +22,8 @@ const Calisthenics = lazy(()=> import('./pages/Calisthenics.page'));
 const CalisthenicsBeginner = lazy(()=> import('./components/Calisthenics/CalisthenicsBeginner'));
 const CalisthenicsIntermediate = lazy(()=> import('./components/Calisthenics/CalisthenicsIntermediate'));
 const CalisthenicsAdvance = lazy(()=> import('./components/Calisthenics/CalisthenicsAdvance'));
+const FitnesCalculator = lazy(()=> import('./pages/FitnessCalculator'));
+const CaloriesCalculator = lazy(()=>import('./components/Fitnesscalculator/CaloriesCalculator'));
 
 
 function App() {
@@ -51,6 +53,9 @@ function App() {
         <Route path='/strength-exercises' element={<StrengthExercises/>} />
         <Route path='/contact' element={<ContactPage/>} />
         <Route path='/about-us' element={<About/>} />
+
+        <Route path='/fitness-calculators' element={<FitnesCalculator/>}/>
+        <Route path='/fitness-calculators/calories-calculator' element={<CaloriesCalculator/>} />
       </Routes>
     </Suspense>
     <Footer/>
