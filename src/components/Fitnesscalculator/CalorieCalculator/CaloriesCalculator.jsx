@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import CalorieTableRow from "./CalorieTableRow";
-import "./FitnessCalculator.css";
+import "../FitnessCalculator.css";
 
 function CaloriesCalculator() {
   let [formData, setFormData] = useState({

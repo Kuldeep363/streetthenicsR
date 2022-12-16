@@ -23,7 +23,7 @@ const CalisthenicsBeginner = lazy(()=> import('./components/Calisthenics/Calisth
 const CalisthenicsIntermediate = lazy(()=> import('./components/Calisthenics/CalisthenicsIntermediate'));
 const CalisthenicsAdvance = lazy(()=> import('./components/Calisthenics/CalisthenicsAdvance'));
 const FitnesCalculator = lazy(()=> import('./pages/FitnessCalculator'));
-const CaloriesCalculator = lazy(()=>import('./components/Fitnesscalculator/CaloriesCalculator'));
+const CaloriesCalculator = lazy(()=>import('./components/Fitnesscalculator/CalorieCalculator/CaloriesCalculator'));
 
 
 function App() {

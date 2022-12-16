@@ -19,10 +19,7 @@
     font-size: 0.8rem;
 }
 
-.group-input{
-    margin-bottom: 7px;
-}
-label {
+#cal-form label {
     background-color: #C7C7CC;
     color: var(--grey);
     border: none;
@@ -33,15 +30,15 @@ label {
     margin: 0 10px 10px 0;
     cursor: pointer;
 }
-input[type="radio"]:checked+label {
+#cal-form input[type="radio"]:checked+label {
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0 7px 10px #073d5a3a;
 }
-input[type='radio']{
+#cal-form input[type='radio']{
     display: none;
 }
-.input-icon {
+#cal-form .input-icon {
     padding: 0 5px 2px 5px;
     position: absolute;
     left: 10px;
